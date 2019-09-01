@@ -128,8 +128,69 @@ public class ListExe2 {
 			System.out.println("Fora do intervalo!");
 		} */
 		
-		double n1,n2, origem;
-		origem = 0.0;
+		/* Exe 7 - Leia 2 valores com uma casa decimal (x e y), que devem representar as coordenadas 
+		 * de um ponto em um plano. A seguir, determine qual o quadrante ao qual pertence o ponto,
+		 *  ou se está sobre um dos eixos cartesianos ou na origem (x = y = 0).
+		 *  Se o ponto estiver na origem, escreva a mensagem “Origem”.
+		 *  Se o ponto estiver sobre um dos eixos escreva “Eixo X” ou “Eixo Y”, conforme for a situação. 
+		 */
+		/*
+		System.out.println("Digite 2 numeros com uma casa decimal: ");
+		double x = sc.nextDouble();
+		double y = sc.nextDouble();
+		
+		
+		if (x == 0.0 && y == 0.0) {
+			System.out.println("Origem!");
+		}else if (x == 0.0) {
+			System.out.println("Eixo Y!");
+		}else if (y == 0.0) {
+			System.out.println("Eixo X!");
+		}else if (x > 0.0 && y > 0.0) {
+			System.out.println("Q1");
+		}else if(x < 0.0 && y > 0.0) {
+			System.out.println("Q2");
+		}else if (x < 0.0 && y < 0.0) {
+			System.out.println("Q3");
+		}else {
+			System.out.println("Q4");
+		} */
+		
+		/* Exercicio 8 - calculo de imposto de renda
+		 * 		RENDA				IMPOSTO
+		 * 	de 0 a 2000.00			isento
+		 * 	de 2000.01 a 3000.00		8%
+		 * 	de 3000.01 a 4500.00	   18%
+		 *  acima de 4500.00		   28%
+		 *  
+		 *  OBS: As taxas incidem somente sobre o valor excedente  			
+		 */
+		
+		System.out.println("Digite o salário com 2 casas decimais: ");
+		double salario = sc.nextDouble();
+		double imposto;
+		
+		
+		if (salario <= 2000.00) {
+			
+			System.out.println("Isento!");
+			
+		}else if (salario > 2000.00 && salario <= 3000.00) {
+			
+			imposto = (salario - 2000.00) * .08;
+			System.out.printf("Imposto: R$%.2f%n",imposto);
+			
+		}else if (salario > 3000.00 && salario <= 4500.00) {
+			
+			imposto = (salario - 3000.00)*.18 + 1000.00 * .08;
+			System.out.printf("Imposto: R$%.2f%n",imposto);
+			
+		}else if (salario > 4500.00) {
+			
+			imposto = (salario - 4500.00)*.28 + 1500.00 *.18 + 1000.00 *.08;
+			System.out.printf("Imposto: R$%.2f%n",imposto);
+			
+		}
 		
 		sc.close();
 	}
