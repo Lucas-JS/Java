@@ -41,7 +41,7 @@ public class Employee2App {
 		System.out.println("Enter the employee id that will be increased: ");
 		int id = sc.nextInt();
 		
-		employee = employeeList.stream().filter(x -> x.getId() == id).findAny().orElse(null);
+		employee = employeeList.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
 		
 		if(employee == null) {
 			System.out.println("This id does not exist!");
