@@ -5,7 +5,7 @@ public class Account {
 	private double tax = 5.0;
 	private String accountHolder;
 	private int accountNumber;
-	private double accountBalance;
+	protected double accountBalance;
 	
 	public Account() {
 		
