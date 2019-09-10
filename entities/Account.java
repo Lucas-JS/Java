@@ -2,55 +2,56 @@ package entities;
 
 public class Account {
 	
-	private double tax = 5.0;
-	private String accountHolder;
-	private int accountNumber;
-	protected double accountBalance;
+	//private double tax = 5.0;
+	private String holder;
+	private Integer number;
+	protected Double balance;
 	
 	public Account() {
 		
 	}
 	
-	public Account (String accountHolder, int accountNumber, double initialDeposit) {
-		this.accountHolder = accountHolder;
-		this.accountNumber = accountNumber;
+	public Account (Integer number, String holder, Double balance) {
+		this.holder = holder;
+		this.number = number;
+		this.balance = balance;
+	}
+	
+	public Account (String holder, Integer number, Double initialDeposit) {
+		this.holder = holder;
+		this.number = number;
 		deposit(initialDeposit);
 	}
 	
-	public Account (String accountHolder, int accountNumber) {
-		this.accountHolder = accountHolder;
-		this.accountNumber = accountNumber;
+	public String getHolder() {
+		return holder;
 	}
 	
-	public String getAccountHolder() {
-		return accountHolder;
+	public void setHolder(String holder) {
+		this.holder = holder;
 	}
 	
-	public void setAccountHolder(String accountHolder) {
-		this.accountHolder = accountHolder;
+	public int getNumber() {
+		return number;
 	}
 	
-	public int getAccountNumber() {
-		return accountNumber;
-	}
-	
-	public double getAccountBalance() {
-		return accountBalance;
+	public double getBalance() {
+		return balance;
 	}
 	
 	public void deposit(double value) {
-		this.accountBalance += value;
+		this.balance += value;
 	}
 	
 	public void withdraw(double value) {
-		this.accountBalance -= value + tax;
+		this.balance -= value ;//+ tax;
 	}
 	
 	public String toString() {
-		return "Account "+getAccountNumber()
-			+", Holder: "+getAccountHolder()
+		return "Account "+getNumber()
+			+", Holder: "+getHolder()
 			+", Balance: $ "
-			+String.format("%.2f", getAccountBalance());
+			+String.format("%.2f", getBalance());
 	}
 
 }

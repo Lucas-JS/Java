@@ -7,8 +7,8 @@ public class BusinessAccount extends Account{
 	public BusinessAccount() {
 	}
 
-	public BusinessAccount(String accountHolder, int accountNumber, double initialDeposit, Double loanLimit) {
-		super(accountHolder, accountNumber, initialDeposit);
+	public BusinessAccount( int number, String holder, double balance, Double loanLimit) {
+		super(number, holder, balance);
 		this.loanLimit = loanLimit;
 	}
 
@@ -22,7 +22,7 @@ public class BusinessAccount extends Account{
 	
 	public void loan(double amount) {
 		if(amount <= loanLimit) {
-			accountBalance += amount - 10.0;
+			balance += amount - 10.0;
 		}
 	}
 }

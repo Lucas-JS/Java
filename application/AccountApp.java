@@ -27,9 +27,9 @@ public class AccountApp {
 		if(resp == 'y') {
 			System.out.print("Enter initial deposit value: ");
 			double value = sc.nextDouble();
-			account = new Account(accountHolder, number, value);
+			account = new Account(accountHolder,number,value);
 		}else {
-			account = new Account(accountHolder, number);
+			account = new Account(number, accountHolder, 0.0);
 		}
 		
 		System.out.println();
