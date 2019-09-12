@@ -37,7 +37,8 @@ public class AccountApp2 {
 			acc5.updateBalance();
 			System.out.println("Update!");
 		}
-		
+		System.out.println(acc.getBalance());
+		System.out.println(acc1.getBalance());
 		// Controlling complexity is the essence of computer programming
 	}
 }
