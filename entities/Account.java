@@ -40,11 +40,11 @@ public class Account {
 	}
 	
 	public void deposit(double value) {
-		this.balance += value;
+		balance += value;
 	}
 	
 	public void withdraw(double value) {
-		this.balance -= value ;//+ tax;
+		balance -= value + 5.0;
 	}
 	
 	public String toString() {
