@@ -16,8 +16,8 @@ public class RectangleApp {
 		Rectangle x = new Rectangle();
 		
 		System.out.println("Enter measures for rectangle x: ");
-		x.height = sc.nextDouble();
-		x.width = sc.nextDouble();
+		x.setHeight(sc.nextDouble()); 
+		x.setWidth(sc.nextDouble());
 		
 		System.out.println("AREA: "+x.area());
 		System.out.println("PERIMETER: "+x.perimeter());
