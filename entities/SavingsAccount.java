@@ -1,6 +1,7 @@
 package entities;
 
-public class SavingsAccount extends Account{
+// blocking inheritance by making a final class or method, this also can increase perfomance in some cases
+public final class SavingsAccount extends Account{
 
 	private Double interestRate;
 	
