@@ -44,16 +44,13 @@ public class TaxPayerApp {
 		}
 		
 		System.out.println();
+		double totalTax = 0.0;
 		System.out.println("TAXES PAID: ");
 		for(TaxPayer payer : list) {
 			System.out.printf(payer.getName()+" $%.2f%n",payer.tax());
-		}
-		
-		double totalTax = 0.0;
-		for(TaxPayer payer : list) {
 			totalTax += payer.tax();
 		}
-		
+
 		System.out.println();
 		System.out.printf("TOTAL TAXES: $%.2f",totalTax);
 		sc.close();
