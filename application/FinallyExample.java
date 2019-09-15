@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class FinallyExample {
-
+	// premature optimization is the root of all evil
 	public static void main(String[] args) {
 		
 		File file = new File("/home/lucas/Documentos/teste.txt");
