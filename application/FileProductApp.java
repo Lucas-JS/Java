@@ -67,5 +67,5 @@ public class FileProductApp {
 
 		sc.close();
 	}
-
+//I couldn't wait for success, so I went ahead without it
 }
