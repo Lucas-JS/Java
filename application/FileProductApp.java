@@ -5,7 +5,6 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
-import java.io.IOError;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +28,9 @@ public class FileProductApp {
 		String sourceFolderStr = sourceFile.getParent();
 		
 		boolean success = new File(sourceFolderStr+"/out").mkdir();
-		
+		if(success ) {
+			System.out.println("Folder created successfully!");
+		}
 		String targetFileStr = sourceFolderStr + "/out/summary.csv";
 
 		try (BufferedReader br = new BufferedReader(new FileReader(sourceFile))) {
