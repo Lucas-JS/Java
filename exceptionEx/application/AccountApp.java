@@ -44,3 +44,7 @@ public class AccountApp {
 		
 	}
 }
+
+// “Success isn’t always about ‘Greatness’, it’s about consistency. Consistent, hard work gains success. Greatness will come.”
+
+
