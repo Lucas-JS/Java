@@ -5,7 +5,6 @@ import devices.ConcretePrinter;
 import devices.ConcreteScanner;
 
 public class MultInheritsApp {
-	// this program doesn't actually do multiple inheritance, just to study the diamond problem
 	
 	public static void main(String[] args) {
 		
