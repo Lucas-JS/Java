@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import generics.services.PrintService;
 
-public class Program {
+public class IntroGenericsApp {
 
 	public static void main(String[] args) {
 		
