@@ -1,0 +1,29 @@
+package generics.application;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class MapExample {
+	public static void main(String[] args) {
+		
+		Map<String, String> cookies = new TreeMap<>();
+		
+		cookies.put("username", "Beatriz");
+		cookies.put("email", "beatriz@gmail.com");
+		cookies.put("phone", "99711122");
+		
+		cookies.remove("email");
+		cookies.put("phone", "99711133");
+		
+		System.out.println("Contains 'phone' key: " + cookies.containsKey("phone"));
+		System.out.println("Phone number: " + cookies.get("phone"));
+		System.out.println("Email: "+ cookies.get("email"));
+		System.out.println("Size: "+ cookies.size());
+		
+		System.out.println("ALL COOKIES: ");
+		
+		for(String key : cookies.keySet()) {
+			System.out.println(key + ": " + cookies.get(key));
+		}
+	}
+}
