@@ -23,3 +23,4 @@ public class MapProductEx {
 		System.out.println("Contains 'ps' key: "+ stock.containsKey(ps));
 	}
 }
+	//O esforco constante supera o talento. A determinacao é uma forma de genialidade.
