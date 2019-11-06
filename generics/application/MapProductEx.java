@@ -24,3 +24,4 @@ public class MapProductEx {
 	}
 }
 	//O esforco constante supera o talento. A determinacao é uma forma de genialidade.
+	//As lágrimas jamais trarão o que suor e sangue concedem.
