@@ -1,5 +1,7 @@
-package functional.entities;
+package functional.util;
 import java.util.Comparator;
+
+import functional.entities.Product;
 
 public class MyComparator implements Comparator<Product> {
 
