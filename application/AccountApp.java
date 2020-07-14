@@ -7,26 +7,26 @@ import entities.Account;
 
 public class AccountApp {
 	
-	public static void main(String[] args) {
-		
+	public static void main(final String[] args) {
+
 		Locale.setDefault(Locale.US);
-		Scanner sc = new Scanner(System.in);
-		
+		final Scanner sc = new Scanner(System.in);
+
 		Account account;
-		
+
 		System.out.print("Enter account number: ");
-		int number = sc.nextInt();
+		final int number = sc.nextInt();
 
 		System.out.print("Enter account holder: ");
 		sc.nextLine();
-		String accountHolder = sc.nextLine();
-	
+		final String accountHolder = sc.nextLine();
+
 		System.out.print("Is there a initial deposit? (y/n)");
-		char resp = sc.next().charAt(0);
-		
-		if(resp == 'y') {
+		final char resp = sc.next().charAt(0);
+
+		if (resp == 'y') {
 			System.out.print("Enter initial deposit value: ");
-			double value = sc.nextDouble();
+			final double value = sc.nextDouble();
 			account = new Account(accountHolder,number,value);
 		}else {
 			account = new Account(number, accountHolder, 0.0);
