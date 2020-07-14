@@ -1,3 +1,4 @@
+// Adding some stuff
 package application;
 
 import java.util.Locale;
@@ -27,7 +28,7 @@ public class AccountApp {
 		if (resp == 'y') {
 			System.out.print("Enter initial deposit value: ");
 			final double value = sc.nextDouble();
-			account = new Account(accountHolder,number,value);
+			account = new Account(number, accountHolder,value);
 		}else {
 			account = new Account(number, accountHolder, 0.0);
 		}
